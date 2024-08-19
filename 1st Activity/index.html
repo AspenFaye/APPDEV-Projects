@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity Guide 1</title>
+    </head>
+    <body>
+        <h1>Activty Guide #1</h1>
+        Name:<input type="text" id="name" required><br /> 
+        Address:<input type="text" id="address" required><br /> 
+        Telephone Number:<input type="text" id="telephone" required><br /> 
+        Major:<input type="text" id="major" required><br /> 
+        <button id="btn1">Submit</button>
+        <p id="output"></p>
+
+
+
+
+        <form onsubmit="return processForm()">
+            <label for = "name">Enter your name:</label>
+            <input type="text" name="name" id="name" required>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+
+
+    <script>
+        //INTRODUCTION SA JS! (How to Create a Function)
+        function processForm(){
+
+            //const - hindi na pwede palitan, let - regular na variables and kadalasang ginagamit pag nag-iiba siya, var - pa-ulit ulit na ginagamit yung pangalan ng variable
+            let userName = document.getElementById("name").value //nirereference yung element na may value nung nasa loob ng parenthesis (in this case, yung nasa loob ni "name")
+            alert("Hello " + userName + "!")
+            return false 
+            //const username
+        }
+
+
+    </script>
+
+
+</html>
